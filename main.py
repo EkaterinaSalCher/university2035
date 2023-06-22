@@ -1,6 +1,6 @@
-s = 'adccccd'
-syms_counter = {}
-for sym in s:
-    syms_counter[sym] = syms_counter.get(sym, 0) + 1
 
-print(syms_counter)
+def palindrome(s):
+    return s[::-1] == s
+while True:
+    s = input("Введите палиндром: ")
+    print(f"{s} True" if palindrome(s) else "False")
